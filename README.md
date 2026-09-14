@@ -20,6 +20,7 @@ Fill in `.env.local`:
 
 - `VITE_AUTH_BROKER_URL`: base URL of the auth broker. Defaults to `https://auth.teacher.dev` when unset.
 - `VITE_GOOGLE_TEMPLATE_ID`: ID between `/d/` and `/edit` in the template URL. The repository is currently configured for `1cS83Iyp41lX6Hli14NfibPIjETNTwglhU_0uGRNOIYo`.
+- `VITE_CF_BEACON` (optional): Cloudflare Web Analytics token. Set it in Vercel's production environment only; when unset the beacon script is not loaded.
 
 The Google OAuth client ID, Picker API key, and Cloud project number live on the broker. `appId` and `apiKey` arrive with every minted token, so the client never hardcodes which Google Cloud project backs it.
 
